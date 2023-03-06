@@ -2,6 +2,12 @@ img
 {
     width: 300px;
 }
+html{
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
 body {
     margin: 0;
     padding: 0;
@@ -44,8 +50,18 @@ h1,h2 {
 .project a:hover {
     background-color: rgba(47, 48, 97, 80%);
 }
-
-
+.project-item h3{
+    margin-top: 0;
+}
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #343434;
+    padding: 20px 0;
+}
+.project-item img{ 
+float: left;
+margin-right: 20px;
+}
 
 .experience {
     background-color:deepskyblue;
