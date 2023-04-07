@@ -1,13 +1,19 @@
 import { createRoot } from "react-dom/client";
-import Pet from "./pet";
+import {Link , BrowserRouter, Routes , Route } from "react-router-dom";
 import SearchParams from "./SearchParams";
+import Details from "./details";
 
 const App = () => {
   return(
-  <div>
-    <h1>Adopt Me!</h1>
-    <SearchParams/>
-  </div>
+    <BrowserRouter>
+    <header>
+      <Link to="/">Adopt Me!</Link>
+    </header>
+    <Routes>
+      <Route path="/details/:id" element={<Details />} />
+      <Route path="/" element={<SearchParams />} />
+    </Routes>
+    </BrowserRouter>
   )
 };
 const Root = createRoot(document.getElementById("root"));
