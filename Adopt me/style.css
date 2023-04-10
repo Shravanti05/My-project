@@ -347,8 +347,8 @@
   }
   
   .loader {
-    font-size: 100px;
-    animation: spin 1s linear infinite;
+    font-size: 50px;
+    /*animation: spin 1s linear infinite;*/
   }
   
   @keyframes spin {
